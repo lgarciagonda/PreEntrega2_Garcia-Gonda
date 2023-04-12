@@ -1,0 +1,493 @@
+
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: GlacialIndifference-Regular;
+    src: url(../fonts/GlacialIndifference-Regular.ttf);
+}
+
+
+/****** GENERAL CSS for every HTML file *****/
+
+body {
+    background-color: rgb(239, 233, 229);
+}
+
+/* HEADER */
+
+#header{
+    background-color: rgb(239, 233, 229);
+    font-family: GlacialIndifference-Regular;
+    display: flex;
+    align-items: center;
+}
+
+/* title */
+
+.titulo__principal{
+    color: rgb(0, 0, 0);    
+    font-weight: normal;
+    font-size: 60px;
+    margin-top: -30px;
+}
+
+/* subtitle */
+
+.titulo__secundario{
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* menu */
+
+header nav ul li{
+    font-size: 12px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 105px;
+    transition: 0.5s;
+}
+
+header nav ul li:hover{
+    transform: scale(1.1);
+}
+
+
+header nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* logo image */
+
+.img__logo{
+    margin-top: -25px;
+    height: 110px;
+    margin-left: 10px;
+    margin-right: 20px;
+    content: normal;
+    transition: 0.3s;
+}   
+
+.img__logo:hover{
+    transform: rotate(10deg);
+}
+
+
+/*MENU HAMBURGUESA*/
+
+header label{
+    display: none;
+}
+header .inputMenu{
+    display: none;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+/* MAIN CONTENT */
+
+/* title */
+
+main h3{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-family: GlacialIndifference-Regular;
+    border: 2px solid rgb(0, 0, 0);
+    border-left: none;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 350px;
+}
+
+/* SECTION CONTENT */
+
+main section ul{
+    padding: 10px 45px; 
+}
+
+main section ul li{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    font-family: GlacialIndifference-Regular;
+    list-style-type: square;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(199, 177, 162);
+    font-family: GlacialIndifference-Regular;
+}
+
+footer ol{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    height: 35px;
+    border-top: 1px solid black;
+}
+
+footer li a{
+    display: flex;
+    text-decoration: none;
+    justify-content: flex-end;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+/***** SPECIFIC CSS for each HTML file ******/
+
+/* INDEX HTML */
+
+.animate__animated.animate__fadeIn{
+    --animate-duration: 3s;
+}
+
+main section div h2{
+    font-family: GlacialIndifference-Regular;
+    text-align: center;
+    font-size: 18px;
+}
+
+main section div h3{
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-family: GlacialIndifference-Regular;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+main section div p{
+    font-family: GlacialIndifference-Regular;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* SERVICES HTML*/
+
+.banner1{
+    width: 100%;
+}
+
+.service{
+    padding: 5px;
+}
+
+.service__detail{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: GlacialIndifference-Regular;
+    list-style-type: none;
+    padding: 6px 20px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    background-color: white;
+}
+
+.contenidoservicios{
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 2;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 80%;
+    padding-bottom: 30px;
+}
+
+.contenidoservicio__titulo{
+    margin-left: 27px;
+    font-size: 23px;
+}
+
+
+/* INFLUENCER MARKETING HTML */
+
+#section-influencer{
+    display: grid;
+    grid-template-areas:
+        "Influencer Influencer Influencer"
+        "1 2 3";
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 200px 200px 200px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.influencer{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.influencer__reversal{
+    width: 350px;
+    transition: 0.3s;
+}
+
+.influencer__reversal:hover{
+    width: 380px;
+}
+
+.influencer__cleanex{
+    width: 400px;
+    margin-top: -40px;
+    transition: 0.3s;
+}
+
+.influencer__cleanex:hover{
+    width: 420px;
+}
+
+.influencer__inarah{
+    width: 310px;
+    transition: 0.3s;
+}
+
+.influencer__inarah:hover{
+    width: 360px;
+}
+
+.influencer__proavenal{
+    width: 340px;
+    margin-left: -20px;
+    transition: 0.3s;
+}
+
+.influencer__proavenal:hover{
+    width: 380px;
+}
+
+.influencer__memeliah{
+    width: 550px;
+    transition: 0.3s;
+}
+
+.influencer__memeliah:hover{
+    width: 570px;
+}
+
+
+/* REFERENCIAS CREDENCIALES HTML */
+
+header{
+    font-family: GlacialIndifference-Regular;
+    margin-bottom: 20px;
+}
+
+#img__navbar{
+    margin-top: -25px;
+    height: 110px;
+    margin-left: 10px;
+    margin-right: 20px;
+    content: normal;
+    transition: 0.3s;
+}
+
+#img__navbar:hover{
+    transform: rotate(10deg);
+}
+
+.credential{
+    padding: 0px;
+}
+.credential__detail{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 15px;
+    list-style-type: none;
+    padding: 10px;
+    background-color: white;
+}
+.section__image{
+    margin-top: -25px;
+    width: 13%;
+    height: 13%;
+}
+
+/* CONTACTO HTML */
+
+/* contact image */
+.section__contactimg{
+    width: 2%;
+    margin-left: 30px;
+    margin-top: 50px;
+
+}
+
+/* contact description */
+.section__contact{
+    font-size: 18px;
+    font-family: GlacialIndifference-Regular;
+    font-style: normal;
+    text-align: left;
+    margin-top: -28px;
+    margin-left: 80px;
+}
+
+/* formulario */
+.formulario{
+    margin-top: 20px;
+}
+
+.formulario1{
+    margin-top: -25px;
+}
+
+.formulario__label{
+    margin-left: 85px;
+    font-size: 16px;
+}
+
+.formulario__input{
+    margin-left: 5px;
+    border: 3px solid rgb(0, 0, 0); 
+    text-align: center;
+}
+
+.formulario__consulta{
+    margin-left: 85px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.formulario__boton{
+    margin-left: 420px;
+    margin-bottom: 18px;
+    padding: 5px;
+    font-size: 12px;    
+    background-color: rgb(239, 233, 229);
+    color: rgb(0, 0, 0);
+    font-family: GlacialIndifference-Regular;
+}
+
+/***** QUERIES *****/
+@media screen and (max-width: 576px){
+
+.header{
+flex-wrap: wrap;
+padding: 10px 20px;
+}
+
+/* INDEX HTML */
+
+/* Presentacion */
+
+main section div div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section div img{
+    padding-left: 0px;
+}
+
+main section div h2{
+    font-family: GlacialIndifference-Regular;
+    text-align: center;
+    font-size: 12px;
+}
+main section div h3{
+    width: 100%;
+    font-family: GlacialIndifference-Regular;
+    font-size: 16px;
+    margin: 0;
+}
+main section div p{
+    font-family: GlacialIndifference-Regular;
+    text-align: center;
+    margin: 0;
+    font-size: 11px;
+}
+
+
+/* REFERENCIAS CREDENCIALES HTML */
+
+.header{
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+header nav{
+    font-family: GlacialIndifference-Regular;
+    margin-bottom: 20px;
+}
+#img__navbar{
+    margin-top: 10px;
+    width: 80%;
+    margin-left: 10px;
+    margin-right: 20px;
+    content: normal;
+}
+}
+
+@media screen and (max-width: 768px){
+
+/* INDEX HTML */
+
+/* Presentacion */
+
+main section div div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section div img{
+    padding-left: 0px;
+}
+
+main section div h2{
+    font-family: GlacialIndifference-Regular;
+    text-align: center;
+    font-size: 12px;
+}
+main section div h3{
+    width: 100%;
+    font-family: GlacialIndifference-Regular;
+    font-size: 16px;
+    margin: 0;
+}
+main section div p{
+    font-family: GlacialIndifference-Regular;
+    text-align: center;
+    margin: 0;
+    font-size: 11px;
+}
+
+/* REFERENCIAS CREDENCIALES HTML */
+
+#img__navbar{
+    margin-top: 10px;
+    width: 80%;
+    margin-left: 10px;
+    margin-right: 20px;
+    content: normal;
+}
+
+.section__image{
+    width: 25%;
+}
+
+main section div{
+    display: flex;
+    justify-content: center;
+}
+
+main section div h2{
+    padding-top: 15px;
+}
+}
